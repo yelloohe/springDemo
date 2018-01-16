@@ -38,4 +38,11 @@ public class xtController {
 		rm.setValue("测试sssssssss");
 		return JSONObject.toJSONString(rm);
 	}
+	
+	@RequestMapping("/exception")
+	public int exception(){		
+		int a = 100/0;
+		return a;
+	}
+	
 }
